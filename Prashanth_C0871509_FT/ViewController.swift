@@ -74,6 +74,7 @@ class ViewController: UIViewController {
           infoAlert.addAction(UIAlertAction(title: "Play again!", style: .default, handler: nil))
           infoAlert.addAction(UIAlertAction(title: "Show Progress", style: .default, handler: nil))
           self.present(infoAlert, animated: true)
+          
 
       }
 
