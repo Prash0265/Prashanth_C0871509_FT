@@ -49,6 +49,7 @@ class ViewController: UIViewController {
         self.Even.isUserInteractionEnabled = true
         self.Even.addGestureRecognizer(labelTap)
         
+        
     }
     func setupOddLabelTap() {
 
