@@ -23,15 +23,7 @@ class ViewController: UIViewController {
         
         let randomInt = Int.random(in: 1..<100)
         randomNumber.text = "\(randomInt)"
- 
-        
     }
-   // let infoAlert = UIAlertController(title: "Result", message: userInfo, preferredStyle: .alert)
-//    private func showError(_ alert: UIAlertController) {
-//        let action = UIAlertAction(title: "Result!", style: .cancel)
-//        alert.addAction(action)
-//        present(alert, animated: true)
-//    }
     
     func isEven(_ n: Int) -> Bool {
         if n%2 == 0{
@@ -75,8 +67,6 @@ class ViewController: UIViewController {
           infoAlert.addAction(UIAlertAction(title: "Play again!", style: .default, handler: nil))
           infoAlert.addAction(UIAlertAction(title: "Show progress", style: .default, handler: {_ in self.displayHomeVC()}))
           self.present(infoAlert, animated: true)
-          
-          
 
           
       }
