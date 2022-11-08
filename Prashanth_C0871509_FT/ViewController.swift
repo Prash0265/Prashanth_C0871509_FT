@@ -23,7 +23,8 @@ class ViewController: UIViewController {
         
         let randomInt = Int.random(in: 1..<100)
         randomNumber.text = "\(randomInt)"
-
+ 
+        
     }
     func isEven(_ n: Int) -> Bool {
         if n%2 == 0{
