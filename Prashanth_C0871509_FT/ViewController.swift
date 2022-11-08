@@ -65,18 +65,19 @@ class ViewController: UIViewController {
           setRandomvalue()
           let infoAlert = UIAlertController(title: "Result", message: "Correct answer", preferredStyle: .alert)
           infoAlert.addAction(UIAlertAction(title: "Play again!", style: .default, handler: nil))
-          infoAlert.addAction(UIAlertAction(title: "Show Progress", style: .default, handler: nil))
+          infoAlert.addAction(UIAlertAction(title: "Show progress", style: .default, handler: {_ in self.displayHomeVC()}))
           self.present(infoAlert, animated: true)
       }else{
           CorrectIncorrect.image = UIImage(named: "InCorrect")
           setRandomvalue()
           let infoAlert = UIAlertController(title: "Result", message: "Incorrect answer", preferredStyle: .alert)
           infoAlert.addAction(UIAlertAction(title: "Play again!", style: .default, handler: nil))
-          infoAlert.addAction(UIAlertAction(title: "Show Progress", style: .default, handler: nil))
+          infoAlert.addAction(UIAlertAction(title: "Show progress", style: .default, handler: {_ in self.displayHomeVC()}))
           self.present(infoAlert, animated: true)
           
           
 
+          
       }
 
         }
@@ -88,18 +89,33 @@ class ViewController: UIViewController {
             setRandomvalue()
             let infoAlert = UIAlertController(title: "Result", message: "Incorrect answer", preferredStyle: .alert)
             infoAlert.addAction(UIAlertAction(title: "Play again!", style: .default, handler: nil))
-            infoAlert.addAction(UIAlertAction(title: "Show Progress", style: .default, handler: nil))
+            infoAlert.addAction(UIAlertAction(title: "Show progress", style: .default, handler: {_ in self.displayHomeVC()}))
             self.present(infoAlert, animated: true)
         }else{
             CorrectIncorrect.image = UIImage(named: "Correct")
             setRandomvalue()
             let infoAlert = UIAlertController(title: "Result", message: "Correct answer", preferredStyle: .alert)
             infoAlert.addAction(UIAlertAction(title: "Play again!", style: .default, handler: nil))
-            infoAlert.addAction(UIAlertAction(title: "Show Progress", style: .default, handler: nil))
+            infoAlert.addAction(UIAlertAction(title: "Show progress", style: .default, handler: {_ in self.displayHomeVC()}))
             self.present(infoAlert, animated: true)
         }
         
     }
+    
+    func displayHomeVC(){
+//
+//        let newUser = User(name: txtName.text!, address: txtAddress.text!, contactNumber: txtContactNumber.text!, postalCode: txtPostalCode.text!, city: cityList[pickCity.selectedRow(inComponent: 0)], email: txtEmail.text!, password: txtPassword.text!, gender: self.gender, dob: pickDOB.date)
+        
+       // if User.addUser(newUser: newUser) {
+            let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let homeVC = mainSB.instantiateViewController(withIdentifier: "HomeTVScene")
+            navigationController?.pushViewController(homeVC, animated: true)
+        //} else {
+        //    let infoAlert = UIAlertController(title: "User Account", message: "An account with this email address already exist.", preferredStyle: .alert)
+         //   infoAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+       //     self.present(infoAlert,animated: true)
+        }
+    
     }
     
 

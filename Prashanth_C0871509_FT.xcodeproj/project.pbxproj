@@ -13,6 +13,9 @@
 		47E9FAD52919D0BB008B474C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E9FAD32919D0BB008B474C /* Main.storyboard */; };
 		47E9FAD72919D0BC008B474C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E9FAD62919D0BC008B474C /* Assets.xcassets */; };
 		47E9FADA2919D0BC008B474C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E9FAD82919D0BC008B474C /* LaunchScreen.storyboard */; };
+		47E9FAE22919E6BA008B474C /* TableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E9FAE12919E6BA008B474C /* TableItems.swift */; };
+		47E9FAE82919E91C008B474C /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E9FAE72919E91C008B474C /* HomeTVC.swift */; };
+		47E9FAEA2919E9A3008B474C /* HomeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E9FAE92919E9A3008B474C /* HomeTVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		47E9FAD62919D0BC008B474C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47E9FAD92919D0BC008B474C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47E9FADB2919D0BC008B474C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E9FAE12919E6BA008B474C /* TableItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItems.swift; sourceTree = "<group>"; };
+		47E9FAE72919E91C008B474C /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVC.swift; sourceTree = "<group>"; };
+		47E9FAE92919E9A3008B474C /* HomeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				47E9FAD62919D0BC008B474C /* Assets.xcassets */,
 				47E9FAD82919D0BC008B474C /* LaunchScreen.storyboard */,
 				47E9FADB2919D0BC008B474C /* Info.plist */,
+				47E9FAE12919E6BA008B474C /* TableItems.swift */,
+				47E9FAE72919E91C008B474C /* HomeTVC.swift */,
+				47E9FAE92919E9A3008B474C /* HomeTVCell.swift */,
 			);
 			path = Prashanth_C0871509_FT;
 			sourceTree = "<group>";
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E9FAEA2919E9A3008B474C /* HomeTVCell.swift in Sources */,
 				47E9FAD22919D0BB008B474C /* ViewController.swift in Sources */,
+				47E9FAE22919E6BA008B474C /* TableItems.swift in Sources */,
 				47E9FACE2919D0BB008B474C /* AppDelegate.swift in Sources */,
 				47E9FAD02919D0BB008B474C /* SceneDelegate.swift in Sources */,
+				47E9FAE82919E91C008B474C /* HomeTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
